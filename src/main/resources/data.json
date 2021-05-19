@@ -1,0 +1,68 @@
+{
+  "BANK_A": {
+    "bankId": "BANK_A",
+    "customers": {
+      "CUSTOMER_A": {
+        "customerId": "CUSTOMER_A",
+        "accounts": {
+          "ACCOUNT_A": {
+            "accountId": "ACCOUNT_A",
+            "balance": 1000,
+            "transfers": [
+              {
+                "sourceAccount": "ACCOUNT_A",
+                "destinationAccount": "ACCOUNT_AB",
+                "amount": 100,
+                "commission": 5
+              }
+            ]
+          },
+          "ACCOUNT_B": {
+            "accountId": "ACCOUNT_B",
+            "balance": 1000
+          }
+        }
+      },
+      "CUSTOMER_B": {
+        "customerId": "CUSTOMER_B",
+        "accounts": {
+          "ACCOUNT_AB": {
+            "accountId": "ACCOUNT_AB",
+            "balance": 1000
+          },
+          "ACCOUNT_BB": {
+            "accountId": "ACCOUNT_BB",
+            "balance": 1000
+          }
+        }
+      }
+    }
+  },
+  "BANK_B": {
+    "bankId": "BANK_B",
+    "customers": {
+      "CUSTOMER_AB": {
+        "customerId": "CUSTOMER_AB",
+        "accounts": {
+          "ACCOUNT_AB": {
+            "accountId": "ACCOUNT_AB",
+            "balance": 1000,
+            "transfers": [
+              {
+                "sourceAccount": "ACCOUNT_A",
+                "destinationAccount": "ACCOUNT_AB",
+                "amount": 100,
+                "commission": 5
+              }
+            ]
+          },
+          "ACCOUNT_BB": {
+            "accountId": "ACCOUNT_BB",
+            "balance": 1000
+          }
+        }
+      }
+    }
+  }
+}
+
